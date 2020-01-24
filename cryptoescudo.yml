@@ -1,0 +1,45 @@
+# 
+#
+#
+#
+VERSION="1.3.0.0"
+
+app: cryptoescudo
+
+ingredients:
+  script:
+    - wget http://cryptoescudo.pt/download/01030000/linux/cryptoescudo-$VERSION-linux.zip
+    - unzip cryptoescudo-$VERSION-linux.zip
+    #- cd cryptoescudo-$VERSION-linux
+    - mkdir -pv  usr/bin/
+    - mkdir -pv  usr/share/applications/
+    - mkdir -pv  usr/share/icons/hicolor/256x256/apps/
+    - cp    - r ../cryptoescudo-$VERSION-linux/64/* usr/bin/
+    - chmod a+x  usr/bin/cryptoescudo-qt
+    - chmod a+x  usr/bin/cryptoescudod
+script:
+  - cat > cryptoescudo.desktop <<EOF
+  - [Desktop Entry]
+  - Type=Application
+  - Name=Cryptoescudo
+  - Icon=Cryptoescudo
+  - Exec=cryptoescudo-qt -min
+  - Terminal=false
+  - Hidden=false
+  - Categories=Network;
+  - StartupNotify=true
+  - StartupWMClass=cryptoescudo-qt
+  - MimeType=x-scheme-handler/dashpay;
+  - StartupNotify=true
+  - EOF
+  - wget https://github.com/cmatomic/cryptoescudo-AppImage/raw/master/img/cryptoescudo.png -O usr/share/icons/hicolor/256x256/apps/cryptoescudo.png
+  - cp usr/share/icons/hicolor/256x256/apps/cryptoescudo.png .
+  - cp cryptoescudo.desktop  usr/share/applications/
+script:
+  - cat > AppRun <<\EOF
+  - #!/bin/bash
+  - set -e
+  - APPDIR="$(dirname "$(readlink -e "$0")")"
+  - exec "${APPDIR}/usr/bin/cryptoescudo-qt" "$@"
+  - EOF
+  - chmod a+x AppRun
