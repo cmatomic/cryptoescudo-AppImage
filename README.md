@@ -1,8 +1,9 @@
  
 ## CryptoEscudo-AppImage
 
+![cryptoescudo](img/cryptoescudo.png)
 
-#A Portuguese cryptocurrency for the digital age
+# A Portuguese cryptocurrency for the digital age
 A free decentralized cryptocurrency everyone can use and create.
 
 CryptoEscudo is a project planned and launched by Portuguese citizens, in which everyone is invited to participate.
@@ -14,11 +15,11 @@ The name of our old currency "escudo" is not intended to represent the desire of
 
 Our idea is not political. Our idea is simply a technical solution emerged from the world of the cryptoeconomy. Because we believe that technology can also serve the common good and persistent problems of our country, this is our proposal:
 
-![cryptoescudo](img/cryptoescudo.png)
 
 
-For information on downloading, building/installing, and using HandBrake, see the official [HandBrake Documentation](https://handbrake.fr/docs).
-https://github.com/HandBrake/HandBrake
+
+For information  see the official [CryptoEscudo Documentation](https://www.cryptoescudo.pt).
+
 
 
 ## Download
