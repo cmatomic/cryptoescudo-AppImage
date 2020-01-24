@@ -1,5 +1,5 @@
 #!/bin/bash
-./pkg2appimage handbarke.yml
+./pkg2appimage CryptoEscudo.yml
 
 cd out/
 zsyncmake *.AppImage
