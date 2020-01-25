@@ -2,8 +2,8 @@
 # CryptoEscudo-AppImage wallet "Unofficial"
 
 <p align="center">
-![cryptoescudo](img/cryptoescudo.png)
- </p>
+<img src="https://github.com/cmatomic/cryptoescudo-AppImage/raw/master/img/cryptoescudo.png"/>
+</p>
 
 ## A Portuguese cryptocurrency for the digital age
 ### A free decentralized cryptocurrency everyone can use and create.
