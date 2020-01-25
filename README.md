@@ -24,3 +24,11 @@ For more information  see the official [CryptoEscudo Documentation](https://www.
 
 ## Download
 Go to [release](https://github.com/cmatomic/cryptoescudo-AppImage/releases) page to download the AppImage build .
+
+
+License
+-------
+Cryptoescudo is released under the terms of the MIT license. See `COPYING` for more
+information or see http://opensource.org/licenses/MIT.
+
+[![Build Status](https://travis-ci.org/cmatomic/cryptoescudo-AppImage.svg?branch=master)](https://travis-ci.org/cmatomic/cryptoescudo-AppImage)
