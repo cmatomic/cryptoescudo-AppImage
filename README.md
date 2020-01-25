@@ -28,6 +28,17 @@ For more information  see the official [CryptoEscudo Documentation](https://www.
 Go to [release](https://github.com/cmatomic/cryptoescudo-AppImage/releases) page to download the AppImage build .
 
 
+## How to run ?
+### Right-click on the appimage choose properties
+
+<p align="center">
+<img src="https://github.com/cmatomic/cryptoescudo-AppImage/raw/master/img/ScreenCap.png"/>
+</p>
+
+ ### then just click on the appimage
+ 
+
+
 License
 -------
 Cryptoescudo is released under the terms of the MIT license. See `COPYING` for more
