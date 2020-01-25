@@ -1,28 +1,23 @@
-# 
 #
-#
-#
-VERSION="1.3.0.0"
-
 app: cryptoescudo
+binpatch: true
 
 ingredients:
   script:
+    - VERSION="1.3.0.0"
     - wget http://cryptoescudo.pt/download/01030000/linux/cryptoescudo-$VERSION-linux.zip
-    - unzip cryptoescudo-$VERSION-linux.zip
-    #- cd cryptoescudo-$VERSION-linux
-    - mkdir -pv  usr/bin/
-    - mkdir -pv  usr/share/applications/
-    - mkdir -pv  usr/share/icons/hicolor/256x256/apps/
-    - cp    - r ../cryptoescudo-$VERSION-linux/64/* usr/bin/
-    - chmod a+x  usr/bin/cryptoescudo-qt
-    - chmod a+x  usr/bin/cryptoescudod
+    - ls cryptoescudo-*-linux.zip | cut -d "-" -f 2 | sed -e 's|.zip||g' > VERSION
+    - unzip cryptoescudo-*-linux.zip
 script:
+  - cp -r ../cryptoescudo-*-linux/64/* ./usr/bin/
+  - chmod a+x ./usr/bin/cryptoescudo-qt
+  - chmod a+x ./usr/bin/cryptoescudod
+  - mkdir -p  ./usr/share/applications/
   - cat > cryptoescudo.desktop <<EOF
   - [Desktop Entry]
   - Type=Application
-  - Name=Cryptoescudo
-  - Icon=Cryptoescudo
+  - Name=CryptoEscudo
+  - Icon=cryptoescudo
   - Exec=cryptoescudo-qt -min
   - Terminal=false
   - Hidden=false
@@ -30,11 +25,10 @@ script:
   - StartupNotify=true
   - StartupWMClass=cryptoescudo-qt
   - MimeType=x-scheme-handler/dashpay;
-  - StartupNotify=true
   - EOF
-  - wget https://github.com/cmatomic/cryptoescudo-AppImage/raw/master/img/cryptoescudo.png -O usr/share/icons/hicolor/256x256/apps/cryptoescudo.png
-  - cp usr/share/icons/hicolor/256x256/apps/cryptoescudo.png .
-  - cp cryptoescudo.desktop  usr/share/applications/
+  - wget https://github.com/cmatomic/cryptoescudo-AppImage/raw/master/img/cryptoescudo.png -O ./usr/share/icons/hicolor/256x256/apps/cryptoescudo.png
+  - cp ./usr/share/icons/hicolor/256x256/apps/cryptoescudo.png .
+  - cp cryptoescudo.desktop  ./usr/share/applications/
 script:
   - cat > AppRun <<\EOF
   - #!/bin/bash
