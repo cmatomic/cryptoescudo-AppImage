@@ -1,10 +1,10 @@
  
-## CryptoEscudo-AppImage wallet "Unofficial"
+# CryptoEscudo-AppImage wallet "Unofficial"
 
 ![cryptoescudo](img/cryptoescudo.png)
 
-# A Portuguese cryptocurrency for the digital age
-A free decentralized cryptocurrency everyone can use and create.
+## A Portuguese cryptocurrency for the digital age
+###A free decentralized cryptocurrency everyone can use and create.
 
 CryptoEscudo is a project planned and launched by Portuguese citizens, in which everyone is invited to participate.
 The idea is developed from the recent and innovative technological concept of cryptocurrency. A concept that changes everything we know about money: the way we use it, save it, or create it. A concept in which coins are created and used digitally in a decentralized and secure network, based on encryption. We're talking of the blockchain technology.
