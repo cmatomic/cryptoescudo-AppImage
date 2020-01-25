@@ -20,7 +20,7 @@ Our idea is not political. Our idea is simply a technical solution emerged from 
 
 
 
-For more information  see the official [CryptoEscudo Documentation](https://www.cryptoescudo.pt).
+For more information  see the official [CryptoEscudo Documentation](https://www.cryptoescudo.pt/index-en.htm).
 
 
 
