@@ -24,7 +24,6 @@ script:
   - Categories=Network;
   - StartupNotify=true
   - StartupWMClass=cryptoescudo-qt
-  - MimeType=x-scheme-handler/cesc;
   - EOF
   - wget https://github.com/cmatomic/cryptoescudo-AppImage/raw/master/img/cryptoescudo.png -O ./usr/share/icons/hicolor/256x256/apps/cryptoescudo.png
   - cp ./usr/share/icons/hicolor/256x256/apps/cryptoescudo.png .
