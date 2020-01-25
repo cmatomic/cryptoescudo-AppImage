@@ -6,7 +6,7 @@ matrix:
       env: BUILDARCH=x64
 
 before_install:
-  - sudo apt-get install desktop-file-utils zsync
+  - sudo apt-get install desktop-file-utils zsync bundler
   - chmod +x build.sh
   - chmod +x pkg2appimage
 script:
