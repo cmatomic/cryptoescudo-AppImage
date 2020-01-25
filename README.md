@@ -1,5 +1,5 @@
  
-## CryptoEscudo-AppImage
+## CryptoEscudo-AppImage wallet "Unofficial"
 
 ![cryptoescudo](img/cryptoescudo.png)
 
