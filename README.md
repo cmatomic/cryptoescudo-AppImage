@@ -45,3 +45,6 @@ Cryptoescudo is released under the terms of the MIT license. See `COPYING` for m
 information or see http://opensource.org/licenses/MIT.
 
 [![Build Status](https://travis-ci.org/cmatomic/cryptoescudo-AppImage.svg?branch=master)](https://travis-ci.org/cmatomic/cryptoescudo-AppImage)
+
+# if you liked this AppImage make a contribution
+CESC:CSi6yNThyh27KuysnU1ttWBdB55gimDrKr
