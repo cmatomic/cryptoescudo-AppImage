@@ -36,6 +36,8 @@ Go to [release](https://github.com/cmatomic/cryptoescudo-AppImage/releases) page
 </p>
 
  ### then just click on the appimage
+ #### For more details see the following video on LBRYtv
+ [How to run CryptoEscudo-AppImage wallet for the first time ?](https://open.lbry.com/@cmatomic:6/CryptoEscudo-AppImage:3?r=GCMJjZsetFCF5EAkcHifDWsg4GxbBed4).
  
 
 
